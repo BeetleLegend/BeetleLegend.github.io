@@ -1,0 +1,60 @@
+.florr-btn {
+    display: inline-block;
+    padding: 5px 24px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #7B9BF5 0%, #4A6EE0 100%); /* 柔和的蓝色渐变 */
+    position: relative;
+    overflow: hidden;
+}
+.florr-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #8AA9FF 0%, #5B7DF0 100%);
+}
+.florr-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.florr-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(30deg);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.florr-btn:hover::after {
+    opacity: 1;
+    top: -20%;
+    left: -20%;
+}
+.florr-btn.green {
+    background: linear-gradient(135deg, #6DD5A7 0%, #3DB881 100%);
+}
+
+.florr-btn.green:hover {
+    background: linear-gradient(135deg, #7FE5B9 0%, #4DC891 100%);
+}
+
+.florr-btn.pink {
+    background: linear-gradient(135deg, #FF9DBC 0%, #F76B9A 100%);
+}
+
+.florr-btn.pink:hover {
+    background: linear-gradient(135deg, #FFADCC 0%, #FF7BAA 100%);
+}
